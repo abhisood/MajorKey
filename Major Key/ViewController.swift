@@ -12,8 +12,8 @@ import SwiftMessages
 class ViewController: UIViewController {
     @IBOutlet weak var majorTextView: UITextView!
     
-    let apiKey = ""
-    let apiSecret = ""
+    let apiKey = "0f7420909a0422268825066ebb2773e8"
+    let apiSecret = "c7266c230540794d1c3d2575700a5d0d"
     
     let defaultsForHistory = "MajorKeys"
     let defaultsForEmail = "MajorKeyEmail"
@@ -35,6 +35,10 @@ class ViewController: UIViewController {
         if UserDefaults.standard.string(forKey: defaultsForEmail) == nil {
             self.didPressSettingsButton(button: nil)
         }
+    }
+    
+    func updateMajorKey() {
+        print(majorTextView.text.count)
     }
 
     func didPressMajorKey() {
@@ -64,6 +68,8 @@ class ViewController: UIViewController {
     }
     
     func triggerEmail(text: String) {
+        if text.count < 5 { return }
+        
         let url = URL(string: "https://api.mailjet.com/v3.1/send")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -84,7 +90,7 @@ class ViewController: UIViewController {
             "Messages": [
                 [
                     "From": [
-                        "Email": "new@MajorKey.me",
+                        "Email": "drunkenozzy@gmail.com",
                         "Name": "New MajorKey"
                     ],
                     "To": [
@@ -103,6 +109,7 @@ class ViewController: UIViewController {
             
             // Request body
             request.httpBody = postString //postString.data(using: .utf8)
+            print(request.curlString)
             let task = URLSession.shared.dataTask(with: request) { data, response, error in
                 DispatchQueue.main.async {
                     guard let data = data, error == nil else {                                                 // check for fundamental networking error
@@ -167,12 +174,8 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITextViewDelegate {
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        if (text == "\n") {
-            self.didPressMajorKey()
-            return false
-        }
-        return true
+    func textViewDidChange(_ textView: UITextView) {
+        updateMajorKey()
     }
 }
 
