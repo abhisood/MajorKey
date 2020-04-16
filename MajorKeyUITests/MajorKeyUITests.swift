@@ -31,5 +31,4 @@ class MajorKeyUITests: XCTestCase {
         alert.buttons.allElementsBoundByIndex.first?.tap()
         snapshot("01Main")
     }
-    
 }

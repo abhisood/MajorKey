@@ -9,6 +9,17 @@
 import UIKit
 import SwiftMessages
 
+public extension String {
+    var subjectText: Substring {
+        // Subject allows 255 chars maximum
+        let prefix = self.prefix(200)
+        if let firstNewlineIndex = prefix.firstIndex(of: "\n") {
+            return prefix.prefix(upTo: firstNewlineIndex)
+        }
+        return prefix
+    }
+}
+
 class ViewController: UIViewController {
     @IBOutlet weak var majorTextView: UITextView!
     
@@ -82,8 +93,7 @@ class ViewController: UIViewController {
         let base64LoginString = loginData.base64EncodedString()
         request.setValue("Basic \(base64LoginString)", forHTTPHeaderField: "Authorization")
         
-        // Subject allows 255 chars maximum
-        let truncatedTextForSubject = text.suffix(200)
+
         
         let emailAddress = UserDefaults.standard.string(forKey: defaultsForEmail)!
         let postContent = [
@@ -99,7 +109,7 @@ class ViewController: UIViewController {
                             "Name": "Name"
                         ]
                     ],
-                    "Subject": "[Major 🔑] \(truncatedTextForSubject)",
+                    "Subject": "[Major 🔑] \(text.subjectText)",
                     "TextPart": text
                 ]
             ]
