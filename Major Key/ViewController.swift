@@ -185,7 +185,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
-        updateMajorKey()
+        // updateMajorKey()
     }
 }
 

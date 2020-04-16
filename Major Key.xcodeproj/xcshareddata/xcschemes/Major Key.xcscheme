@@ -41,9 +41,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA105C5B212E27DB00A10419"
-               BuildableName = "Major KeyUITests.xctest"
-               BlueprintName = "Major KeyUITests"
+               BlueprintIdentifier = "CA105C69212E280800A10419"
+               BuildableName = "MajorKeyUITests.xctest"
+               BlueprintName = "MajorKeyUITests"
                ReferencedContainer = "container:Major Key.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -51,9 +51,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CA105C69212E280800A10419"
-               BuildableName = "MajorKeyUITests.xctest"
-               BlueprintName = "MajorKeyUITests"
+               BlueprintIdentifier = "4D01F2CE2448677F0049098B"
+               BuildableName = "MajorKeyTests.xctest"
+               BlueprintName = "MajorKeyTests"
                ReferencedContainer = "container:Major Key.xcodeproj">
             </BuildableReference>
          </TestableReference>

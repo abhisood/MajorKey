@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D01F2D22448677F0049098B /* MajorKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D01F2D12448677F0049098B /* MajorKeyTests.swift */; };
 		4D2629A221E5ECBD008C9F7E /* URLRequest+cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2629A121E5ECBD008C9F7E /* URLRequest+cURL.swift */; };
-		4DC6041C2448651700F245D8 /* SubjectStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6041B2448651700F245D8 /* SubjectStringTest.swift */; };
 		B84B043C88B90AF6796B9AD6 /* Pods_Major_Key.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C7D06D34549E267256245F8 /* Pods_Major_Key.framework */; };
 		CA105C6D212E280800A10419 /* MajorKeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA105C6C212E280800A10419 /* MajorKeyUITests.swift */; };
 		CA105C75212E281000A10419 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA105C74212E281000A10419 /* SnapshotHelper.swift */; };
@@ -22,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D01F2D42448677F0049098B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA49839D1FCB8D8A0076BD21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA4983A41FCB8D8A0076BD21;
+			remoteInfo = "Major Key";
+		};
 		CA105C6F212E280800A10419 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CA49839D1FCB8D8A0076BD21 /* Project object */;
@@ -33,8 +40,10 @@
 
 /* Begin PBXFileReference section */
 		1FEFDD9B6786AD868BF47340 /* Pods-Major Key.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Major Key.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Major Key/Pods-Major Key.debug.xcconfig"; sourceTree = "<group>"; };
+		4D01F2CF2448677F0049098B /* MajorKeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajorKeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D01F2D12448677F0049098B /* MajorKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MajorKeyTests.swift; sourceTree = "<group>"; };
+		4D01F2D32448677F0049098B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2629A121E5ECBD008C9F7E /* URLRequest+cURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+cURL.swift"; sourceTree = "<group>"; };
-		4DC6041B2448651700F245D8 /* SubjectStringTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectStringTest.swift; sourceTree = "<group>"; };
 		5DDC55DC35E51319D901146D /* Pods-Major Key.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Major Key.release.xcconfig"; path = "Pods/Target Support Files/Pods-Major Key/Pods-Major Key.release.xcconfig"; sourceTree = "<group>"; };
 		7C7D06D34549E267256245F8 /* Pods_Major_Key.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Major_Key.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA105C6A212E280800A10419 /* MajorKeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MajorKeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +62,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D01F2CC2448677F0049098B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA105C67212E280800A10419 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D01F2D02448677F0049098B /* MajorKeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D01F2D12448677F0049098B /* MajorKeyTests.swift */,
+				4D01F2D32448677F0049098B /* Info.plist */,
+			);
+			path = MajorKeyTests;
+			sourceTree = "<group>";
+		};
 		57E27A6C4595951215DED59A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +119,6 @@
 				CA105C6C212E280800A10419 /* MajorKeyUITests.swift */,
 				CA105C74212E281000A10419 /* SnapshotHelper.swift */,
 				CA105C6E212E280800A10419 /* Info.plist */,
-				4DC6041B2448651700F245D8 /* SubjectStringTest.swift */,
 			);
 			path = MajorKeyUITests;
 			sourceTree = "<group>";
@@ -104,6 +128,7 @@
 			children = (
 				CA4983A71FCB8D8A0076BD21 /* Major Key */,
 				CA105C6B212E280800A10419 /* MajorKeyUITests */,
+				4D01F2D02448677F0049098B /* MajorKeyTests */,
 				CA4983A61FCB8D8A0076BD21 /* Products */,
 				C4F936AC3A01B6F5B87F5012 /* Pods */,
 				57E27A6C4595951215DED59A /* Frameworks */,
@@ -115,6 +140,7 @@
 			children = (
 				CA4983A51FCB8D8A0076BD21 /* Major Key.app */,
 				CA105C6A212E280800A10419 /* MajorKeyUITests.xctest */,
+				4D01F2CF2448677F0049098B /* MajorKeyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,6 +164,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D01F2CE2448677F0049098B /* MajorKeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D01F2D82448677F0049098B /* Build configuration list for PBXNativeTarget "MajorKeyTests" */;
+			buildPhases = (
+				4D01F2CB2448677F0049098B /* Sources */,
+				4D01F2CC2448677F0049098B /* Frameworks */,
+				4D01F2CD2448677F0049098B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D01F2D52448677F0049098B /* PBXTargetDependency */,
+			);
+			name = MajorKeyTests;
+			productName = MajorKeyTests;
+			productReference = 4D01F2CF2448677F0049098B /* MajorKeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CA105C69212E280800A10419 /* MajorKeyUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA105C71212E280800A10419 /* Build configuration list for PBXNativeTarget "MajorKeyUITests" */;
@@ -181,10 +225,15 @@
 		CA49839D1FCB8D8A0076BD21 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Felix Krause";
 				TargetAttributes = {
+					4D01F2CE2448677F0049098B = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA4983A41FCB8D8A0076BD21;
+					};
 					CA105C69212E280800A10419 = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1010;
@@ -213,11 +262,19 @@
 			targets = (
 				CA4983A41FCB8D8A0076BD21 /* Major Key */,
 				CA105C69212E280800A10419 /* MajorKeyUITests */,
+				4D01F2CE2448677F0049098B /* MajorKeyTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D01F2CD2448677F0049098B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA105C68212E280800A10419 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,11 +335,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D01F2CB2448677F0049098B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D01F2D22448677F0049098B /* MajorKeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA105C66212E280800A10419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC6041C2448651700F245D8 /* SubjectStringTest.swift in Sources */,
 				CA105C6D212E280800A10419 /* MajorKeyUITests.swift in Sources */,
 				CA105C75212E281000A10419 /* SnapshotHelper.swift in Sources */,
 			);
@@ -302,6 +366,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D01F2D52448677F0049098B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA4983A41FCB8D8A0076BD21 /* Major Key */;
+			targetProxy = 4D01F2D42448677F0049098B /* PBXContainerItemProxy */;
+		};
 		CA105C70212E280800A10419 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CA4983A41FCB8D8A0076BD21 /* Major Key */;
@@ -329,6 +398,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D01F2D62448677F0049098B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
+				INFOPLIST_FILE = MajorKeyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhisood.MajorKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Major Key.app/Major Key";
+			};
+			name = Debug;
+		};
+		4D01F2D72448677F0049098B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DWGHUZJ9EH;
+				INFOPLIST_FILE = MajorKeyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhisood.MajorKeyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Major Key.app/Major Key";
+			};
+			name = Release;
+		};
 		CA105C72212E280800A10419 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -523,6 +631,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D01F2D82448677F0049098B /* Build configuration list for PBXNativeTarget "MajorKeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D01F2D62448677F0049098B /* Debug */,
+				4D01F2D72448677F0049098B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA105C71212E280800A10419 /* Build configuration list for PBXNativeTarget "MajorKeyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
