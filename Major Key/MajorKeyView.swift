@@ -8,6 +8,26 @@
 
 import UIKit
 
+extension UIColor {
+    static func createDynamicColor(light: UIColor, dark: UIColor) -> UIColor {
+        if #available(iOS 13.0, *) {
+            return UIColor.init {
+                switch ($0.userInterfaceStyle) {
+                case .unspecified, .light:
+                    return light
+                case .dark:
+                    return dark
+                }
+            }
+        } else {
+            return light
+        }
+    }
+
+    static let backgroundColor = UIColor.createDynamicColor(light: .white, dark: .black)
+    static let textColor = UIColor.createDynamicColor(light: .black, dark: .white)
+}
+
 protocol MajorKeyViewDelegate: class {
     func didPressKeyButton(button: UIButton)
     func didPressPackageButton(button: UIButton)
@@ -44,6 +64,7 @@ class MajorKeyView: UIView {
 
         // autolayout
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.backgroundColor = .backgroundColor
 
         addSubview(view)
     }

@@ -37,6 +37,10 @@ class ViewController: UIViewController {
         let majorView = MajorKeyView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 92))
         majorView.delegate = self
         self.majorTextView.inputAccessoryView = majorView
+
+        self.view.backgroundColor = .backgroundColor
+        self.majorTextView.backgroundColor = .backgroundColor
+        self.majorTextView.textColor = .textColor
     }
     
     override func viewDidAppear(_ animated: Bool) {
